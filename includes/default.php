@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>
 	Título h1
 </h1>
@@ -22,28 +21,3 @@
 <p>
 	Parágrafo
 </p>
-=======
-<h1>
-	Título h1
-</h1>
-
-<h2>
-	Título h2
-</h2>
-
-<h3>
-	Título h3
-</h3>
-
-<h4>
-	Título h4
-</h4>
-
-<h5>
-	Título h5
-</h5>
-
-<p>
-	Parágrafo
-</p>
->>>>>>> start files

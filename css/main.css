@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 /*
  * RESET 
-=======
-/*
- * RESET 
->>>>>>> start files
  */
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700");
@@ -160,7 +155,6 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
-<<<<<<< HEAD
 /**
 
   TODO:
@@ -219,7 +213,7 @@ p {
   font-size: 1.0rem;
   margin: 1rem 0; }
 
-<<<<<<< HEAD
+
 /*
  * GRID
 =======
@@ -308,7 +302,7 @@ p {
   .row:last-child .column:last-child {
     margin-bottom: 0; } }
 
-<<<<<<< HEAD
+
 /*
  * ALIGNMENT
 =======
@@ -422,7 +416,7 @@ p {
 .aCenter {
   text-align: center; }
 
-<<<<<<< HEAD
+
 /* CONTATO
 =======
 /* CONTATO
@@ -483,7 +477,7 @@ p {
   background-color: transparent;
   border: none; }
 
-<<<<<<< HEAD
+
 /* erro 404
 =======
 /* erro 404
@@ -493,7 +487,7 @@ p {
   font-weight: 700;
   color: red; }
 
-<<<<<<< HEAD
+
 /* mapas
 =======
 /* mapas
@@ -514,7 +508,6 @@ p {
   width: 100% !important;
   height: 100% !important; }
 
-<<<<<<< HEAD
 /* BACK TO TOP
 =======
 /* BACK TO TOP
@@ -537,7 +530,7 @@ a.back-to-top {
 a:hover.back-to-top {
   background-color: #5f5c5c; }
 
-<<<<<<< HEAD
+
 /* mobile trigger
 =======
 /* mobile trigger
