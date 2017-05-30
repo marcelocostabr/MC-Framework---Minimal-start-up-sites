@@ -155,33 +155,13 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
-/**
-
-  TODO:
-  - https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3
-  - https://www.smashingmagazine.com/2016/05/fluid-typography/
-  - https://pearsonified.com/typography/
-  - https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/
- */
 /*
  * TYPOGRAPHY
-=======
-/**
-
-  TODO:
-  - https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3
-  - https://www.smashingmagazine.com/2016/05/fluid-typography/
-  - https://pearsonified.com/typography/
-  - https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/
- */
-/*
- * TYPOGRAPHY
->>>>>>> start files
  */
 html {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: calc(0.875em + 0.1 * (100vw - 60em) / 40);
+  font-size: -webkit-calc(87.5% + 0.1 * (100vw - 6000%) / 40);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -190,36 +170,31 @@ h1, h2, h3, h4, h5 {
   color: #000; }
 
 h1 {
-  font-size: 3rem;
-  margin: 0 0 1rem; }
+  font-size: 3em;
+  line-height: 1.7em; }
 
 h2 {
-  font-size: 2.5rem;
-  margin: 1rem 0 2rem; }
+  font-size: 2.5em;
+  line-height: 1.7em; }
 
 h3 {
-  font-size: 2rem;
-  margin: 1rem 0; }
+  font-size: 2em;
+  line-height: 1.7em; }
 
 h4 {
-  font-size: 1.5rem;
-  margin: 1rem 0; }
+  font-size: 1.5em;
+  line-height: 1.7em; }
 
 h5 {
-  font-size: 1.0rem;
-  margin: 1rem 0; }
+  font-size: 1.0em;
+  line-height: 1.7em; }
 
-p {
-  font-size: 1.0rem;
-  margin: 1rem 0; }
-
+body {
+  font-size: 1.1em;
+  line-height: 1.7em; }
 
 /*
  * GRID
-=======
-/*
- * GRID
->>>>>>> start files
  */
 .row,
 .column {
@@ -302,13 +277,92 @@ p {
   .row:last-child .column:last-child {
     margin-bottom: 0; } }
 
+/*
+ * GRID
+ */
+.row,
+.column {
+  box-sizing: border-box; }
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.column {
+  position: relative;
+  float: left;
+  display: block; }
+
+.column + .column {
+  margin-left: 1.6%; }
+
+.column-1 {
+  width: 6.86666666667%; }
+
+.column-2 {
+  width: 15.3333333333%; }
+
+.column-3 {
+  width: 23.8%; }
+
+.column-4 {
+  width: 32.2666666667%; }
+
+.column-5 {
+  width: 40.7333333333%; }
+
+.column-6 {
+  width: 49.2%; }
+
+.column-7 {
+  width: 57.6666666667%; }
+
+.column-8 {
+  width: 66.1333333333%; }
+
+.column-9 {
+  width: 74.6%; }
+
+.column-10 {
+  width: 83.0666666667%; }
+
+.column-11 {
+  width: 91.5333333333%; }
+
+.column-12 {
+  width: 100%;
+  margin-left: 0; }
+
+@media only screen and (max-width: 768px) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    float: none;
+    width: auto; }
+  .column + .column {
+    margin-left: 0; }
+  .row {
+    margin-bottom: 0; }
+  .column {
+    margin-bottom: 10px; }
+  .row:last-child .column:last-child {
+    margin-bottom: 0; } }
 
 /*
  * ALIGNMENT
-=======
-/*
- * ALIGNMENT
->>>>>>> start files
  */
 .mt5 {
   margin-top: 5px; }
@@ -416,11 +470,27 @@ p {
 .aCenter {
   text-align: center; }
 
+/*
+ * UTILITIES
+ */
+a.back-to-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 2000;
+  right: 20px;
+  bottom: 50px;
+  background: #807d7d url("../img/up-arrow1.png") no-repeat center 47%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+a:hover.back-to-top {
+  background-color: #5f5c5c; }
 
 /* CONTATO
-=======
-/* CONTATO
->>>>>>> start files
 */
 #formContato {
   margin-top: 30px; }
@@ -477,21 +547,7 @@ p {
   background-color: transparent;
   border: none; }
 
-
-/* erro 404
-=======
-/* erro 404
->>>>>>> start files
-*/
-.erro404 {
-  font-weight: 700;
-  color: red; }
-
-
 /* mapas
-=======
-/* mapas
->>>>>>> start files
 */
 .google-maps {
   position: relative;
@@ -508,31 +564,12 @@ p {
   width: 100% !important;
   height: 100% !important; }
 
-/* BACK TO TOP
-=======
-/* BACK TO TOP
->>>>>>> start files
+/* 
+erro 404
 */
-a.back-to-top {
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 2000;
-  right: 20px;
-  bottom: 50px;
-  background: #807d7d url("../img/up-arrow1.png") no-repeat center 47%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
-
-a:hover.back-to-top {
-  background-color: #5f5c5c; }
-
+.erro404 {
+  font-weight: 700;
+  color: red; }
 
 /* mobile trigger
-=======
-/* mobile trigger
->>>>>>> start files
 */

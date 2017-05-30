@@ -1,16 +1,6 @@
-/**
-
-  TODO:
-  - https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3
-  - https://www.smashingmagazine.com/2016/05/fluid-typography/
-  - https://pearsonified.com/typography/
-  - https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/
- */
-
 /*
  * TYPOGRAPHY
  */
-
 
 // FONTE PADRÃO CORPO
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -20,14 +10,11 @@ $mainFont: 'Lato', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
 $mainTitleFont: 'PT Sans', sans-serif;
 
-// DEFINE O TAMANHO
-// INICIAL DA FONTE
-$mailFontSize: 16px;
-
 html{
   font-family: $mainFont;
-  font-size:   $mailFontSize;   // 1rem = 16px
-  line-height: 30px;
+  // CALCULA O TAMANHO DA FONTE
+  font-size: calc(0.875em + 0.1 * (100vw - 60em) / 40);
+  font-size: -webkit-calc(87.5% + 0.1 * (100vw - 6000%) / 40);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;  
 }
@@ -41,45 +28,31 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 3rem;
-  	margin: 0 0 1rem;
+    font-size: 3em;
+    line-height: 1.7em;  	
 }
 
 h2 {
-    font-size: 2.5rem;
-	margin: 1rem 0 2rem;
+    font-size: 2.5em;
+	  line-height: 1.7em;
 }
 
 h3 {
-    font-size: 2rem;
-  	margin: 1rem 0;    
+    font-size: 2em;
+    line-height: 1.7em;
 }
 
 h4 {
-    font-size: 1.5rem;
-  	margin: 1rem 0;    
+    font-size: 1.5em;
+    line-height: 1.7em;
 }
 
 h5 {
-    font-size: 1.0rem;
-  	margin: 1rem 0;    
+    font-size: 1.0em;
+  	line-height: 1.7em;
 }
 
-p {
-	font-size: 1.0rem;
-  	margin: 1rem 0;
+body { 
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
-
-
-// @media screen and (max-width: 1260px) {
-//   html{
-//     font-size: 20px;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   html{
-//     font-size: 16px;
-//     line-height: 27px;
-//   }
-// }
