@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /*
  * RESET 
+=======
+/*
+ * RESET 
+>>>>>>> start files
  */
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700");
@@ -155,6 +160,7 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
+<<<<<<< HEAD
 /**
 
   TODO:
@@ -165,6 +171,18 @@ svg:not(:root) {
  */
 /*
  * TYPOGRAPHY
+=======
+/**
+
+  TODO:
+  - https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3
+  - https://www.smashingmagazine.com/2016/05/fluid-typography/
+  - https://pearsonified.com/typography/
+  - https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/
+ */
+/*
+ * TYPOGRAPHY
+>>>>>>> start files
  */
 html {
   font-family: "Lato", sans-serif;
@@ -201,8 +219,13 @@ p {
   font-size: 1.0rem;
   margin: 1rem 0; }
 
+<<<<<<< HEAD
 /*
  * GRID
+=======
+/*
+ * GRID
+>>>>>>> start files
  */
 .row,
 .column {
@@ -285,8 +308,13 @@ p {
   .row:last-child .column:last-child {
     margin-bottom: 0; } }
 
+<<<<<<< HEAD
 /*
  * ALIGNMENT
+=======
+/*
+ * ALIGNMENT
+>>>>>>> start files
  */
 .mt5 {
   margin-top: 5px; }
@@ -394,7 +422,11 @@ p {
 .aCenter {
   text-align: center; }
 
+<<<<<<< HEAD
 /* CONTATO
+=======
+/* CONTATO
+>>>>>>> start files
 */
 #formContato {
   margin-top: 30px; }
@@ -451,13 +483,21 @@ p {
   background-color: transparent;
   border: none; }
 
+<<<<<<< HEAD
 /* erro 404
+=======
+/* erro 404
+>>>>>>> start files
 */
 .erro404 {
   font-weight: 700;
   color: red; }
 
+<<<<<<< HEAD
 /* mapas
+=======
+/* mapas
+>>>>>>> start files
 */
 .google-maps {
   position: relative;
@@ -474,7 +514,11 @@ p {
   width: 100% !important;
   height: 100% !important; }
 
+<<<<<<< HEAD
 /* BACK TO TOP
+=======
+/* BACK TO TOP
+>>>>>>> start files
 */
 a.back-to-top {
   display: none;
@@ -493,5 +537,9 @@ a.back-to-top {
 a:hover.back-to-top {
   background-color: #5f5c5c; }
 
+<<<<<<< HEAD
 /* mobile trigger
+=======
+/* mobile trigger
+>>>>>>> start files
 */
