@@ -1,0 +1,182 @@
+/*
+ * RESET 
+ */
+
+// http://meyerweb.com/eric/tools/css/reset/
+//   v2.0 | 20110126
+//   License: none (public domain)
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers 
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Removes default margin and apply a smooth on fonts
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    -webkit-text-stroke: 1px transparent;
+    -moz-text-stroke: 1px transparent;
+    -ms-text-stroke: 1px transparent;
+}
+
+a {
+    cursor: pointer;
+}
+
+// Images
+// 1. Responsiveness: Sets a maximum width relative to the parent and auto scales the height
+// 2. Corrects `max-width` behavior if padding and border are used
+// 3. Remove border when inside `a` element in IE 8/9/10.
+// 4. Remove the gap between images and the bottom of their containers
+
+img {
+    // 1 
+    max-width: 100%;
+    height: auto;
+    // 2 
+    box-sizing: border-box;
+    // 3 
+    border: 0;
+    // 4 
+    vertical-align: middle;
+}
+
+//Preserve original image dimensions
+.m-img-preserve,
+.m-img-preserve img {
+    max-width: none;
+}
+
+//Correct overflow not hidden in IE 9/10/11.
+
+svg:not(:root) {
+    overflow: hidden;
+}
