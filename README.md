@@ -43,18 +43,22 @@ Minimal structure for new site projects
 # TODO
 ---
 - [ ] seek favicon service
-- [ ] responsive fonts algorithm
 - [ ] update github
 
 # REFERENCES
-----
 - [Batalha Less vs Estilus vs Sass] (https://tableless.com.br/sass-vs-less-vs-stylus-batalha-dos-pre-processadores/)
 - [Um outro metodo de escrever css] (https://tableless.com.br/sass-um-outro-metodo-de-escrever-css/)
 - [SASS Guia em PT-BR] (https://sass-guidelin.es/pt/#arquitetura)
 - [SASS Guia em Inglês] (http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-- [Markdown Cheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Responsive Pixel / typography] (https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3)
 - [SASS Pixel responsive] (https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3)
+- [Beginners to SASS] (https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/)
+
+# TYPOGRAPHY REFERENCES
+- [Viewport based typography] (<https://zellwk.com/blog/viewport-based-typography/>)
+- [Responsive typography] (<https://zellwk.com/blog/responsive-typography/>)
 - [Fluid Typography] (https://www.smashingmagazine.com/2016/05/fluid-typography/)
 - [Typography] (https://pearsonified.com/typography/)
-- [Beginners to SASS] (https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/)
+- [Responsive Pixel / typography] (https://medium.com/@_qichen/responsive-pixel-an-alternative-to-media-query-for-responsive-resizing-1101ae62c5b3)
+
+# MARKDOWN REFERENCES
+- [Markdown Cheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
