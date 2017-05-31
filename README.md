@@ -43,7 +43,7 @@ Minimal structure for new site projects
 # TODO
 ---
 - [ ] seek favicon service
-- [ ] update github
+- [ ] see integration with vscode
 
 # REFERENCES
 - [Batalha Less vs Estilus vs Sass] (https://tableless.com.br/sass-vs-less-vs-stylus-batalha-dos-pre-processadores/)
