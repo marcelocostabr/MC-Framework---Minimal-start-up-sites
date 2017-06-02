@@ -1,7 +1,5 @@
 # BLANK PROJECT
 
-## test vscode clone repository by ricardo
-
 Minimal structure for new site projects
 
 ## classes folder  
