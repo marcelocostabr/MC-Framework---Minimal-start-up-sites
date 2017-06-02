@@ -27,9 +27,9 @@ Minimal structure for new site projects
 Solicitar no chat:
 "Preciso configurar url amigável no site.
 As regras seriam:
-1.Na raiz tenha regra para ir tudo para index.php
-2.Em /painel que vá tudo para /painel/index.php
-configr"
+- 1.Na raiz tenha regra para ir tudo para index.php
+- 2.Em /painel que vá tudo para /painel/index.php
+"
 Por padrão a raiz já tem essa regra no Configr.
 
 ## includes folder
