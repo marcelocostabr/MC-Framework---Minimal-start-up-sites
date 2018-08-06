@@ -5,43 +5,51 @@
 // FONTE PADRÃO CORPO
 @import url('https://fonts.googleapis.com/css?family=Lato');
 $mainFont: 'Lato', sans-serif;
- 
+
 // FONTE PADRÃO TITULOS
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
 $mainTitleFont: 'PT Sans', sans-serif;
 
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min_width: 400;
+$max_width: 800;
+// These values represent the range of fon-tsize to apply
+// These values effect the base font-size, headings and other elements will scale proportionally
+$min_font: 15;
+$max_font: 20;
 
+:root { font-size: #{$min_font}px; }
+// This part is a little bit ugly, I will explain what is going on in a blog post soon.
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  :root {
+    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+@media (min-width: #{$max_width}px){
+   :root {
+     font-size: #{$max_font}px;
+   }
+}
 
 html{
   font-family: $mainFont;
-  // CALCULA O TAMANHO DA FONTE
-  // 100% = 16px
-  font-size: 100%;
-  font-size: calc(0.875em + 0.1 * (100vw - 60em) / 40);
-  font-size: -webkit-calc(87.5% + 0.1 * (100vw - 6000%) / 40);
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;  
-
-  // Define o tamanho máximo da fonte
-  @media (min-width: 1000px) {
-    font-size: calc(107.5%)
-  }
-
+  -ms-text-size-adjust: 100%;
 }
 
 // DEFINE OS TITULOS
-// UTILIZANDO AS VARIÁVEIS 
-// DO PROJETO 
+// UTILIZANDO AS VARIÁVEIS
+// DO PROJETO
 h1, h2, h3, h4, h5 {
   font-family: $mainTitleFont;
   color: $mainColor;
   // aplica margem para todos, não sei por usar rem aqui
-  margin-top: 1.4rem 0;  
+  margin-top: 1.4rem 0;
 }
 
 h1 {
-    font-size: 2.7em; 
-    line-height: 1.2em;  
+    font-size: 2.7em;
+    line-height: 1.2em;
 }
 
 h2 {
@@ -64,7 +72,7 @@ h5 {
     line-height: 1.5em;
 }
 
-body { 
+body {
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -75,6 +83,6 @@ p + p {
 
 article {
   background-color: blue;
-  // Anywhere between 22.5em to 37.5em. Use your discretion 
+  // Anywhere between 22.5em to 37.5em. Use your discretion
   max-width: 37.5em
 }

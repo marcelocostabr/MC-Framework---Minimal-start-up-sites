@@ -1,7 +1,7 @@
 // Author:         Marcelo Costa
 // Version:        0.2.10
 
-// DEFINE AS VARIAVÉIS 
+// DEFINE AS VARIAVÉIS
 // PADRÕES DO PROJETO
 $mainBackground:    #000;
 $mainColor:         #000;
@@ -10,14 +10,12 @@ $errorColor:        #000;
 // IMPORTA OS ARQUIVOS
 // AUXILIARES
 @import 'base/reset';
-@import 'base/typography';
-@import 'base/grid'; 
+@import 'base/grid';
 @import 'base/alignment';
 @import 'base/utils';
 @import 'pages/contact';
 @import 'pages/error404';
-
-
+@import 'base/typography';
 
 /* mobile trigger
 */

@@ -2,21 +2,21 @@
 
 Minimal structure for new site projects
 
-## classes folder  
+## classes folder
 ---
 - All PHP classes own and vendor like PHPMailler
 
-## css folder 
+## css folder
 ---
 - Use SASS, main.scss file include all files from base folder
 - Files on the root folder with .css extesion are not tracked with SASS
 - Vendors folder are designated to store any code not created from us
-- To process the SASS code on local machine we use [PrePros 6](prepros.io) 
+- To process the SASS code on local machine we use [Koala](http://koala-app.com/)
 
 ## favicon folder
 ---
 - Folder to store favicon files
-- We use [VER SERVICO ]() the to prepare the files
+- We use [Favicon Generator](http://www.favicon-generator.org/) the to prepare the files
 
 ## img folder
 ---
@@ -31,16 +31,15 @@ As regras seriam:
 - 2.Em /painel que vá tudo para /painel/index.php
 "
 
-
 ## includes folder
 ---
 - All PHP files must be saved here, the index.php will include the right file.
-- Default files are: 
+- Default files are:
 
-| File          | Function                        | 
+| File          | Function                        |
 | ------------- |:-------------------------------:|
-| 404.php       | 404 error                       | 
-| db.php        | Database conection example      |  
+| 404.php       | 404 error                       |
+| db.php        | Database conection example      |
 | default.php   | Default home page               |
 | redir.php     | Redirection 301 example         |
 
@@ -52,8 +51,7 @@ As regras seriam:
 
 # TODO
 ---
-- [ ] seek favicon service
-- [ ] see integration with vscode
+- [ ] fix font bug on Microsoft Edge
 
 # REFERENCES
 - [Batalha Less vs Estilus vs Sass] (https://tableless.com.br/sass-vs-less-vs-stylus-batalha-dos-pre-processadores/)
@@ -64,6 +62,9 @@ As regras seriam:
 - [Beginners to SASS] (https://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/)
 
 # TYPOGRAPHY REFERENCES
+- [Precise Control Responsive Typography (fix Edge scale bug)] (https://madebymike.com.au/writing/precise-control-responsive-typography/)
+- [Example showed on post above] (https://codepen.io/MadeByMike/pen/YPJJYv?editors=110)
+
 - [Viewport based typography] (<https://zellwk.com/blog/viewport-based-typography/>)
 - [Responsive typography] (<https://zellwk.com/blog/responsive-typography/>)
 - [Fluid Typography] (https://www.smashingmagazine.com/2016/05/fluid-typography/)
