@@ -49,10 +49,6 @@ As regras seriam:
 - All javascript files must be saved here
 - Jquery and Modernizr are load from the official CDN
 
-# TODO
----
-- [ ] fix font bug on Microsoft Edge
-
 # REFERENCES
 - [Batalha Less vs Estilus vs Sass] (https://tableless.com.br/sass-vs-less-vs-stylus-batalha-dos-pre-processadores/)
 - [Um outro metodo de escrever css] (https://tableless.com.br/sass-um-outro-metodo-de-escrever-css/)
