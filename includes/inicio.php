@@ -10,50 +10,17 @@
 	</div>
 </div>
 
-<div class="apresentacao">
-	<div class="container">
-		<h1>MÁRMORES, GRANITOS, VIDROS E ESQUADRIAS</h1>
-		<p>A marmoraria Castelo das Pedras busca oferecer soluções em serviços de mármores e granitos.  Atuando há mais de 08 anos no mercado de São Roque e região procura sempre se manter atualizada frente as novidades e tendências de design e opções de materiais. </p>
-		<p>Dispõe  ainda de maquinário e ferramentas atualizadas, profissionais devidamente capacitados que passam periodicamente por treinamentos, além de trabalhar somente com matérias-primas de qualidade.</p>
-	</div>
-</div>
-
 <div class="container containerHome">
 	<div class="row">
-		<div class="column column-6 homeBox">
+		<div class="column column-6">
 			<h2>
-				CONHEÇA  <strong>NOSSAS PEDRAS </strong>
+				COLUNA 1
 			</h2>
-			<div class="texto">
-				São mais de 30 tipos de pedras entre mármores e granitos, para projetos de alto padrão ou cotidianos, com certeza teremos uma que lhe agradará.
-			</div>
-			<a href="<?php echo $urlPath ?>pedras">VEJA TODAS AS PEDRAS</a>
 		</div>
-		<div class="column column-6 homeBox1">
+		<div class="column column-6">
 			<h2>
-				TRABALHOS <strong>RECENTES</strong>
+				COLUNA 2
 			</h2>
-			<div class="projetos">
-				<!-- 5 últimos trabalhos -->
-				<?php
-				$tabela = 'port_posts' ;
-				$where = "rascunho != 's'";
-				$orderby = 'id DESC';
-				$limit = 'LIMIT 0,5';
-				$dados = dbfGetReg($pdo, $tabela, $where, $orderby, $limit);
-				foreach ($dados as $reg) {
-					?>
-					<a href="<?php echo $urlPath ?>nossos-trabalhos/projeto/<?php echo $reg['idurl'] ?>">
-						<img src="<?php echo $cfg_raiz_upload_dir_view.'portifolio/g'.$reg['imagem'] ?>"  alt="<?php echo $reg['titulo'] ?>" title="<?php echo $reg['titulo'] ?>" />
-					</a>
-					<?php
-				}
-				?>
-			</div>
 		</div>
 	</div>
-</div>
-
-<div class="container tiposPedras pb30">
-	Amarelo Florença, Amarelo Icaraí, Amarelo Maracujá, Amarelo Ornamental, Amarelo Santa Cecília, Amarelo Santa Light, Aqualux, Arabesco, Ardósia, Branco Carrara, Branco Dallas, Branco Norte, Branco Polar, Branco Siena, Cinza Absoluto, Cinza Andorinha, Cinza Corumba, Crema Marfil, Itaúnas, Mármore Branco, Marrom Absoluto, Marrom Café, Ocre, Preto Absoluto, Preto Indiano, Preto Via Láctea, Prime Branco, Prime Crema, Rosa Raíssa, Terracota, Travertino Romano, Verde Candeias, Verde Ubatuba, Vermelho Jacarandá.
 </div>
