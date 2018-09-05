@@ -1,0 +1,90 @@
+// ===============================================
+
+// FOOTER
+
+// ===============================================
+
+.footer {
+    width: 100%;
+    background-color: $cinza-claro;
+    color: $cinza-escuro;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -6px;
+    border-top: 1px solid $cinza-medio3;
+}
+
+        .menuFooter ul li {
+            display: inline-block;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        .menuFooter ul li:last-child {
+            margin-right: 0px;
+        }
+
+        .menuFooter a {
+            text-decoration: none;
+            color: $cinza-escuro;
+            display: inline-block;
+            border-bottom: 6px solid $cinza-claro;
+        }
+
+        .menuFooter ul li a:hover {
+            border-bottom: 6px solid $vermelho;
+        }
+
+        .socialMedia ul li {
+            display: inline-block;
+            font-size: 30px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+            .socialMedia ul li a {
+                text-decoration: none;
+                color: $cinza-medio;
+            }
+
+            .socialMedia ul li:last-child {
+                margin-right: 0px;
+            }
+
+        .address {
+            font-size: 13px;
+            color: $cinza-escuro;
+            text-align: center;
+        }
+
+            .address span {
+                display: block;
+
+            }
+
+            .address a {
+                text-decoration: none;
+            }
+
+            .address a:hover {
+                text-decoration: none;
+            }
+
+@media screen and (max-width: 1000px) {
+
+    .menuFooter ul li {
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+
+    .address span {
+        margin-bottom: 10px;
+    }
+
+}

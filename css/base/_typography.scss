@@ -3,36 +3,35 @@
  */
 
 // FONTE PADRÃO CORPO
-@import url('https://fonts.googleapis.com/css?family=Lato');
-$mainFont: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans');
 
-// FONTE PADRÃO TITULOS
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
-$mainTitleFont: 'PT Sans', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
+$mainTitleFont: 'Lato', sans-serif;
 
-// These values are the minimum and maximum viewport sizes to apply the font scaling
-$min_width: 400;
-$max_width: 800;
-// These values represent the range of fon-tsize to apply
-// These values effect the base font-size, headings and other elements will scale proportionally
-$min_font: 15;
-$max_font: 20;
+// // These values are the minimum and maximum viewport sizes to apply the font scaling
+// $min_width: 400;
+// $max_width: 800;
+// // These values represent the range of fon-tsize to apply
+// // These values effect the base font-size, headings and other elements will scale proportionally
+// $min_font: 14px;
+// $max_font: 20;
 
-:root { font-size: #{$min_font}px; }
-// This part is a little bit ugly, I will explain what is going on in a blog post soon.
-@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
-  :root {
-    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
-  }
-}
-@media (min-width: #{$max_width}px){
-   :root {
-     font-size: #{$max_font}px;
-   }
-}
+// :root { font-size: #{$min_font}px; }
+// // This part is a little bit ugly, I will explain what is going on in a blog post soon.
+// @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+//   :root {
+//     font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+//   }
+// }
+// @media (min-width: #{$max_width}px){
+//    :root {
+//      font-size: #{$max_font}px;
+//    }
+// }
 
 html{
   font-family: $mainFont;
+  // font-size: $min_font;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -44,7 +43,7 @@ h1, h2, h3, h4, h5 {
   font-family: $mainTitleFont;
   color: $mainColor;
   // aplica margem para todos, não sei por usar rem aqui
-  margin-top: 1.4rem 0;
+  // margin-top: 1.4rem 0;
 }
 
 h1 {
@@ -73,7 +72,7 @@ h5 {
 }
 
 body {
-  font-size: 1.1em;
+  font-size: 1.0em;
   line-height: 1.5em;
 }
 
@@ -81,8 +80,8 @@ p + p {
   margin-top: 1.5em ;
 }
 
-article {
-  background-color: blue;
-  // Anywhere between 22.5em to 37.5em. Use your discretion
-  max-width: 37.5em
-}
+// article {
+//   background-color: blue;
+//   // Anywhere between 22.5em to 37.5em. Use your discretion
+//   max-width: 37.5em
+// }

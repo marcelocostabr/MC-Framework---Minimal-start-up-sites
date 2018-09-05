@@ -1,0 +1,122 @@
+// ===============================================
+
+// BLOG LIST
+
+// ===============================================
+
+article {
+    margin-bottom: 20px;
+}
+article h1 {
+    border-bottom: 2px solid $cinza-claro;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+article h2 {
+    border-bottom: 2px solid $cinza-claro;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+article p {
+    font-size: 14px;
+}
+
+article p a {
+    color: #fff;
+    background-color: $vermelho;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+article p a:hover {
+    background-color: $vermelho-escuro;
+}
+
+.textNormalizeBlog {
+    font-size: 15px;
+}
+
+    .textNormalizeBlog p {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .textNormalizeBlog ul li {
+       list-style: square;
+       list-style-position: inside;
+    }
+
+    .textNormalizeBlog img {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+// ===============================================
+
+// BLOG SIDEBAR
+
+// ===============================================
+
+.postList {
+    padding-right: 20px;
+}
+
+.sidebar input {
+    height: 40px;
+    border: 1px solid $cinza-medio;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: $cinza-claro;
+    text-indent: 10px;
+    width: 55%;
+}
+
+.sidebar input#buscar {
+    background-color: $vermelho-escuro;
+    color: #fff;
+    font-weight: bold;
+    text-indent: 0px;
+    border: 1px solid $vermelho-escuro;
+    width: 40%;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.postDestaque {
+    margin-top: 20px;
+    font-family: $mainTitleFont;
+    font-size: 23px;
+    color: $cinza-escuro;
+    font-weight: 900;
+    border-bottom: 2px solid $cinza-claro;
+    line-height: 40px;
+}
+
+.sidebar ul {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid $cinza-claro;
+    line-height: 25px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: $cinza-escuro;
+}
+
+.sidebar ul li a:hover {
+    font-weight: bold;
+}

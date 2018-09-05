@@ -1,0 +1,106 @@
+// ===============================================
+
+// CUSTOMIZAÇÃO TEMA PÁGINA CASTELO DOS VIDROS
+
+// ===============================================
+
+.menu-vidros {
+    width: 75%;
+    position: relative;
+    float: right;
+    text-align: right;
+    margin-top: 133px;
+    display: block;
+    visibility: visible;
+    z-index: 10;
+}
+
+    .menu-vidros ul li {
+        display: inline-block;
+    }
+
+    .menu-vidros ul li a {
+        color: $cinza-escuro;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .menu-vidros ul li a:hover, .active-vidros {
+        border-bottom: 6px solid $azul-escuro1;
+    }
+
+// mobile
+@media screen and (max-width: $container) {
+
+    .menu-vidros {
+       display: none;
+       visibility: hidden;
+       width: 100%;
+       margin-top: -5px;
+    }
+
+            .menu-vidros ul li {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                background-color: $azul-escuro;
+                border-bottom: 1px solid $azul-claro;
+            }
+
+            .menu-vidros ul li:hover {
+                background-color: $azul-escuro1;
+            }
+
+            .menu-vidros ul li a:hover, .active {
+                border-bottom: none;
+            }
+
+            .menu-vidros ul li a {
+                color: $cinza-claro;
+                padding-left: 0px;
+                padding-right: 0px;
+                font-size: 15px;
+                text-decoration: none;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+
+            }
+
+            .menu-vidros ul li a:hover, .active-vidros {
+                border: none;
+                color: $cinza-medio;
+            }
+
+            .menu-vidros ul li:first-child {
+                padding-top: 2px;
+            }
+
+            .menu-vidros ul li:last-child {
+                padding-bottom: 1px;
+            }
+
+                    // torna o menu mobile visivel
+        .menu-active-vidros {
+            display: block;
+            visibility: visible;
+        }
+
+}
+
+// ===============================================
+
+// CUSTOMIZAÇÃO TOPO
+
+// ===============================================
+
+
+.vidrosTopo {
+    background-color: $azul-claro;
+}

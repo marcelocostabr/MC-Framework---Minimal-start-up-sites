@@ -3,39 +3,29 @@
 // REQUIRED INCLUDES
 ////////////////////////////////////////////////////////////////
 
-// redirecionamento 301
-//require_once('includes/redir301.php');
-
 // url amigavel
 require_once('classes/Url.class.php');
-
-// db
-//require_once ('includes/db.php');
-
-// classes diversas
-//require_once ('classes/funlib.php');
 
 ////////////////////////////////////////////////////////////////
 // FRIENDLY URL
 ////////////////////////////////////////////////////////////////
 
-
 // site.com/page/action/id/return
 $page   = Url::getURL( 0 );
 $action = Url::getURL( 1 );
 $id     = Url::getURL( 2 );
-$return = Url::getURL( 3 ); 
+$return = Url::getURL( 3 );
 $urlPath= URL::getBase();
 
 if ($page == null) {
-    $page = "default";
+    $page = "inicio";
 }
 
 ////////////////////////////////////////////////////////////////
 // TITLES
 ////////////////////////////////////////////////////////////////
 
-if ( $page == 'default' or $page == '' ) {$tituloSite = "Titulo Inicio";}
+if ( $page == 'inicio' or $page == '' ) {$tituloSite = "Título";}
 
 
 ?>
@@ -50,8 +40,8 @@ if ( $page == 'default' or $page == '' ) {$tituloSite = "Titulo Inicio";}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $tituloSite ?></title>
     <META NAME="description" content="" />
-    <META NAME="keywords" content="" />
-    <META NAME="copyright" CONTENT="Copyright © - http://www.site.com.br">
+    <META NAME="keywords" content=" " />
+    <META NAME="copyright" CONTENT="Copyright © - http://www.cliente.com.br">
     <META NAME="AUTHOR" CONTENT="Mind Design - http://www.mind.art.br">
     <META NAME="distribution" CONTENT="global">
     <META NAME="rating" content="general">
@@ -62,7 +52,7 @@ if ( $page == 'default' or $page == '' ) {$tituloSite = "Titulo Inicio";}
     <META NAME="InktomiSlurp" content="index,follow">
     <META NAME="Unknownrobot" content="index,follow">
     <META NAME="RATING" CONTENT="GENERAL">
-    <meta name="Revisit-after" content="1 days">  
+    <meta name="Revisit-after" content="1 days">
  -->
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
@@ -88,7 +78,7 @@ if ( $page == 'default' or $page == '' ) {$tituloSite = "Titulo Inicio";}
 
 <body>
 
- 
+
     <?php
     ////////////////////////////////////////////////////////////////
     // CONTENT INCLUDE
@@ -114,7 +104,6 @@ if ( $page == 'default' or $page == '' ) {$tituloSite = "Titulo Inicio";}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <script src="<?php echo $urlPath;?>js/ie8.js"></script>
     <script src="<?php echo $urlPath;?>js/options.js?<?php echo rand(5,20)?>"></script>
 
 
